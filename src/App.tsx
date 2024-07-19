@@ -1,12 +1,10 @@
 import React from "react";
-import Sidebar from "./modules/sidebar";
-import MainContent from "./modules/main";
+import { TodoList } from "./modules/todos/components/todos-list";
 
 const App = () => {
   return (
     <div className="flex h-screen">
-      <Sidebar />
-      <MainContent />
+      <TodoList />
     </div>
   );
 };

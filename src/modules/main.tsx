@@ -1,5 +1,5 @@
 import React from "react";
-import TaskItem from "./task-item";
+import TaskItem from "./common/task-item";
 import { Plus } from "lucide-react";
 const MainContent = () => (
   <div className="flex-grow p-8">
