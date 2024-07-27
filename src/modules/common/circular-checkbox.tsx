@@ -40,7 +40,7 @@ const CircularCheckbox: React.FC<CircularCheckboxProps> = ({
         id="tailwind-checkbox"
         checked={checked}
         onChange={() => setChecked(!checked)}
-        className={`appearance-none w-6 h-6 rounded-full border-2 ${borderColor} 
+        className={`appearance-none w-6 h-6 rounded-full border-[3px] ${borderColor} 
           bg-white ${checkedBoxBg} checked:border-transparent 
           transition duration-200 cursor-pointer`}
       />

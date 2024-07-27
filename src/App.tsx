@@ -1,13 +1,18 @@
 import React from "react";
-import { TodoList } from "./modules/todos/components/todos-list";
+import { Main } from "./main";
+import { BrowserRouter } from "react-router-dom";
 import Sidebar from "./modules/common/sidebar";
 
 const App = () => {
   return (
-    <div className="flex h-screen space-x-10">
-      <Sidebar />
-      <TodoList />
-    </div>
+    <BrowserRouter>
+      <div className="flex h-screen">
+        <Sidebar />
+        <div className="flex-1">
+          <Main />
+        </div>
+      </div>
+    </BrowserRouter>
   );
 };
 

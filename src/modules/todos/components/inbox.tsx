@@ -2,11 +2,12 @@ import Navbar from "../../common/navbar";
 import TaskItem from "../../common/todo-card";
 import { useIndexTodos } from "../todo.queries";
 
-export const TodoList = () => {
+export const Inbox = () => {
   const { data: todos, isLoading } = useIndexTodos();
   return (
-    <div className="flex flex-col space-y-10 w-screen pl-20">
+    <div className="flex flex-col space-y-10 pl-20">
       <Navbar />
+      <h1 className="text-3xl font-bold">Inbox</h1>
       <div className="flex flex-col space-y-3">
         {!isLoading &&
           todos?.map((todo) => (
